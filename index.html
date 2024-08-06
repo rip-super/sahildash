@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Dash</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/9cb87210c1.js" crossorigin="anonymous"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+  </style>
+</head>
+
+<body>
+  <!--------Homepage----------->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Engineer/Programmer</p>
+        <h1>Hi, I'm <span>Sahil!</span></h1>
+      </div>
+    </div>
+  </div>
+  <!--------About Me----------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hey there! I'm Sahil Dash, a middle schooler who enjoys
+            engineering and programming. Python is my go-to language, but I'm
+            also diving into HTML, CSS, and JavaScript, as well as eyeing PHP
+            for the future. Some of my classes include Spanish, Orchestra, and
+            Computer Science. In Orchestra, I proudly hold the position of
+            first violin and first chair. When I'm not playing my instrument,
+            you'll find me playing the Italian on a chessboard or hitting some
+            killer tennis shots. My Discord is "sahildash" and my GitHub
+            username is "rip-super."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------Portfolio----------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" />
+          <div class="layer">
+            <h3>Python Calculator</h3>
+            <p>
+              Introducing the ultimate Python calculator! With a sleek design
+              and a comprehensive set of functions, it's ideal for both simple
+              arithmetic and intricate equations. Featuring 25 diverse
+              functions, from quadratic equations to trigonometry, it's your
+              go-to tool for calculations of any complexity. Dive into its
+              capabilities by exploring the full code below.
+            </p>
+            <a href="https://github.com/rip-super/python-thingies/blob/main/calculator.py" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" />
+          <div class="layer">
+            <h3>Downloads Folder Sorter</h3>
+            <p>
+              Tired of the chaos in your downloads folder? Say hello to a
+              Python script that effortlessly sorts and organizes your files
+              by type, supporting up to 59 different formats! Bid farewell to
+              clutter and welcome a streamlined, efficient downloads folder.
+              Download the script now and experience the convenience of a
+              neatly organized file library!
+            </p>
+            <a href="https://github.com/rip-super/python-thingies/blob/main/file_sorter_downloads.py" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" />
+          <div class="layer">
+            <h3>Online Pokédex</h3>
+            <p>
+              Ever wondered what a shiny looks like or what moves your Pokémon
+              can learn? Look no further! Our all-inclusive Pokédex is your
+              go-to resource, providing comprehensive support for every
+              Pokémon imaginable. Say goodbye to uncertainty and hello to
+              excitement as you delve into the vibrant universe of Pokémon
+              with ease. Don't miss out! Click below to access the greatest
+              Pokédex the world has ever seen!
+            </p>
+            <a href="https://sahildash.adamenglish.net/pokedex/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: Add 3 more works + desc.
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-4.png" />
+            <div class="layer">
+              <h3>Python Calculator</h3>
+              <p>
+                Introducing the ultimate Python calculator! With a sleek design
+                and a comprehensive set of functions, it's ideal for both simple
+                arithmetic and intricate equations. Featuring 25 diverse
+                functions, from quadratic equations to trigonometry, it's your
+                go-to tool for calculations of any complexity. Dive into its
+                capabilities by exploring the full code below.
+              </p>
+              <a
+                href="https://github.com/rip-super/python-thingies/blob/main/calculator.py"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-5.png" />
+            <div class="layer">
+              <h3>Downloads Folder Sorter</h3>
+              <p>
+                Tired of the chaos in your downloads folder? Say hello to a
+                Python script that effortlessly sorts and organizes your files
+                by type, supporting up to 59 different formats! Bid farewell to
+                clutter and welcome a streamlined, efficient downloads folder.
+                Download the script now and experience the convenience of a
+                neatly organized file library!
+              </p>
+              <a
+                href="https://github.com/rip-super/python-thingies/blob/main/file_sorter_downloads.py"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-6.png" />
+            <div class="layer">
+              <h3>Online Pokédex</h3>
+              <p>
+                Ever wondered what a shiny looks like or what moves your Pokémon
+                can learn? Look no further! Our all-inclusive Pokédex is your
+                go-to resource, providing comprehensive support for every
+                Pokémon imaginable. Say goodbye to uncertainty and hello to
+                excitement as you delve into the vibrant universe of Pokémon
+                with ease. Don't miss out! Click below to access the greatest
+                Pokédex the world has ever seen!
+              </p>
+              <a
+                href="https://sahildash.adamenglish.net/pokedex/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/rip-super?tab=repositories"
+          target="_blank"
+          class="btn"
+          >See More</a
+        >
+      </div>
+      -->
+    </div>
+    <!--------Contact Me----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p id="email" onclick="copyToClipboard('sahildash7704@gmail.com')">
+              <i class="fa-solid fa-paper-plane"></i> sahildash7704@gmail.com
+            </p>
+            <div id="copyMessage">
+              <i class="fa-solid fa-square-check"></i>⠀Copied to clipboard
+            </div>
+            <div class="social-icons">
+              <a href="https://github.com/rip-super" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- extra icons:
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              -->
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © SD Incorporated</p>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        var copyMessage = document.getElementById("copyMessage");
+        copyMessage.style.display = "block";
+        copyMessage.classList.add("copy-animation");
+        setTimeout(function () {
+          copyMessage.style.display = "none";
+          copyMessage.classList.remove("copy-animation");
+        }, 1500);
+      }
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxbvcogmpEPqOJBWCHaZuN19B3TfYsfE2ZVFQodw3O-kOT4ay8NSdim8HMAdfP5f5Xf/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            form.reset();
+            showMessage("Message sent successfully!");
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            showMessage("An error occurred. Please try again later.", true);
+          });
+      });
+
+      function showMessage(message, isError = false) {
+        msg.textContent = message;
+        msg.style.color = isError ? "#ff0000" : "#61b752";
+        msg.style.display = "block";
+        msg.classList.add("fadeInOut");
+        setTimeout(() => {
+          msg.style.display = "none";
+          msg.classList.remove("fadeInOut");
+        }, 2500);
+      }
+    </script>
+</body>
+
+</html>
