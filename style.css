@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', Tahoma;
@@ -149,7 +149,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -255,7 +255,8 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -293,29 +294,33 @@ form .btn2 {
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-  
+
 .copy-animation {
     animation: fadeInOut 1.8s ease-in-out;
 }
-  
+
 @keyframes fadeInOut {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     20% {
-      opacity: 1;
+        opacity: 1;
     }
+
     60% {
-      opacity: 1;
+        opacity: 1;
     }
+
     80% {
-      opacity: 0.8;
+        opacity: 0.8;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
 }
- 
+
 .copyright {
     width: 100%;
     text-align: center;
@@ -325,7 +330,8 @@ form .btn2 {
     margin-top: 20px;
 }
 
-.fa-xmark, .fa-bars {
+.fa-xmark,
+.fa-bars {
     display: none !important;
 }
 
@@ -339,7 +345,9 @@ form .btn2 {
 /* ------Small Screen CSS------ */
 
 @media only screen and (max-width: 600px) {
-    .fa-bars, .fa-xmark {
+
+    .fa-bars,
+    .fa-xmark {
         display: block !important;
         font-size: 25px;
         cursor: pointer;
@@ -426,5 +434,9 @@ form .btn2 {
     .contact-left,
     .contact-right {
         flex-basis: 100%;
+    }
+
+    #login {
+        display: none;
     }
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h1>Welcome to the Online Pokédex!</h1>
+      <input type="text" id="pokemonName" placeholder="Enter Pokémon Name" />
+      <br />
+      <input type="checkbox" id="shiny" /><label for="shiny"
+        >Shiny Version</label
+      >
+      <br />
+      <button onclick="fetchData();">Fetch Pokémon Info</button>
+      <img
+        src=""
+        alt="Pokémon Sprite"
+        id="pokémonSprite"
+        style="display: none"
+        width="150"
+        height="150"
+      />
+      <h3 id="name"></h3>
+      <button onclick="toggleStats();" id="statsBtn">Toggle Stats</button>
+      <div id="stats" style="display: none">
+        <h3>Pokémon Stats</h3>
+        <ul>
+          <li>Height/Length: <span id="height"></span></li>
+          <li>Weight: <span id="weight"></span></li>
+          <li>Type(s): <span id="type"></span></li>
+          <li>Base HP: <span id="bHP"></span></li>
+          <li>Base Attack: <span id="bAtt"></span></li>
+          <li>Base Defence: <span id="bDef"></span></li>
+          <li>Base Special-Attack: <span id="bSpAtt"></span></li>
+          <li>Base Special-Defence: <span id="bSpDef"></span></li>
+          <li>Base Speed: <span id="bSpeed"></span></li>
+          <li>Possible Abilities: <span id="ability"></span></li>
+          <li>Learnable Moves: <span id="moves"></span></li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

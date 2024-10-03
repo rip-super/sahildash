@@ -15,7 +15,7 @@
 
 <body>
   <!--------Homepage----------->
-  <div id="header">
+  <div id="header" onscroll="closemenu()">
     <div class="container">
       <nav>
         <img src="images/logo.png" class="logo" />
@@ -24,6 +24,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li id="login"><a href="login/">Login</a></li>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -35,7 +36,7 @@
     </div>
   </div>
   <!--------About Me----------->
-  <div id="about">
+  <div id="about" onscroll="closemenu()">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
@@ -59,7 +60,7 @@
     </div>
   </div>
   <!--------Portfolio----------->
-  <div id="portfolio">
+  <div id="portfolio" onscroll="closemenu()">
     <div class="container">
       <h1 class="sub-title">My Work</h1>
       <div class="work-list">
@@ -172,7 +173,7 @@
     </div>
   </div>
   <!--------Contact Me----------->
-  <div id="contact">
+  <div id="contact" onscroll="closemenu()">
     <div class="container">
       <div class="row">
         <div class="contact-left">
@@ -209,6 +210,12 @@
       <p>Copyright © SD Incorporated</p>
     </div>
   </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      closemenu();
+    });
+  </script>
 
   <script>
     var sidemenu = document.getElementById("sidemenu");

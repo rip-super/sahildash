@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="content" class="slide-in-animation form-container">
+      <h1>Welcome User!</h1>
+      <h2>Please register and create an account.</h2>
+
+      <!-- Username Input -->
+      <div class="input-group">
+        <input type="text" placeholder="Username" id="user" class="input-field" />
+        <span id="username-error" class="error-message" style="display:none;">Username is required.</span>
+      </div>
+      <br />
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <input type="password" placeholder="Password" id="pass" class="input-field" />
+      </div>
+      <br />
+
+      <!-- Confirm Password Input -->
+      <div class="input-group">
+        <input type="password" placeholder="Confirm Password" id="pass-conf" class="input-field" />
+        <span id="password-mismatch-error" class="error-message" style="display:none;">Passwords do not match.</span>
+        <span class="error-message" style="display: none;"></span>
+      </div>
+      <br />
+
+      <!-- Register Button -->
+      <button class="btn" id="register">Create Account</button>
+      <br /><br />
+
+      <!-- Error Display -->
+      <div id="error-display" class="error-message" style="display: none;"></div>
+
+      <!-- Login Redirect -->
+      <h4>
+        Already have an account?
+        <a href="../" class="login-link">Login!</a>
+      </h4>
+    </div>
+  </div>
+</body>
+
+</html>
